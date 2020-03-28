@@ -1,0 +1,75 @@
+@import 'tools';
+
+.btn {
+  padding: 10px;
+  border: none;
+  @include fluidFontSize(13px, 16px);
+  font-family: $accent-font;
+  letter-spacing: 2px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 3px;
+}
+
+.btn-flat:hover {
+  background-color: $light-grey-bg;
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+}
+
+.btn-disabled {
+  pointer-events: none;
+  opacity: 0.7;
+  background: $grey-gradient !important;
+}
+
+.btn-green {
+  background: $green-gradient !important;
+}
+
+.btn-blue {
+  color: white;
+  background: $blue-gradient !important;
+
+  &:disabled {
+    opacity: 0.75;
+    color: whitesmoke !important;
+  }
+}
+
+.btn-light {
+  color: $text-color;
+  background: white !important;
+}
+
+.btn-dark {
+  color: white;
+  background: $dark-gradient !important;
+}
+
+.btn-grey {
+  color: white;
+  background: $dark-grey !important;
+}
+
+.btn-light-grey {
+  color: darkgray;
+  background: $grey-gradient;
+}
+
+.btn-primary {
+  color: white;
+  background: $primary !important;
+}
+
+.btn-secondary {
+  background: $secondary !important;
+}
+
+.btn-red {
+  color: white;
+  background: $red-gradient !important;
+}

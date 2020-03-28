@@ -24,3 +24,52 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+@import 'tools';
+
+@import 'utils/flex';
+@import 'utils/utils';
+@import 'utils/spacing';
+@import 'utils/layout';
+@import 'utils/responsive';
+@import 'utils/typograhpy';
+@import 'utils/buttons';
+@import 'utils/forms';
+@import 'utils/colors';
+@import 'utils/waves';
+@import 'utils/dynamic-modal';
+
+@font-face {
+  font-family: Quicksand;
+  src: url('assets/fonts/Quicksand-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url('assets/fonts/Quicksand-Medium.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url('assets/fonts/Quicksand-Regular.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url('assets/fonts/Quicksand-SemiBold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Quicksand;
+  src: url('assets/fonts/Quicksand-Bold.ttf');
+  font-weight: 900;
+  font-style: normal;
+}

@@ -1,0 +1,17 @@
+<app-page-header></app-page-header>
+
+<ion-content>
+  <div [ngSwitch]="isBuilderOpened" class="h-100">
+
+    <div *ngSwitchCase="true">
+      <app-pdf-builder></app-pdf-builder>
+    </div>
+
+    <div class="h-100" *ngSwitchDefault>
+      <app-init-buttons class="h-100"></app-init-buttons>
+    </div>
+
+  </div>
+</ion-content>
+
+<app-bottom-toolbar [isDisabled]="!isBuilderOpened"></app-bottom-toolbar>

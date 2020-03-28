@@ -5,8 +5,8 @@ import { MainPage } from './main.page';
 import { BottomToolbarComponent } from './bottom-toolbar/bottom-toolbar.component';
 import { PdfBuilderComponent } from './pdf-builder/pdf-builder.component';
 import { InitButtonsComponent } from './init-buttons/init-buttons.component';
-import { BuilderFileService } from '../services/builder-file.service';
-import { BuilderFile } from '../core/model/builder-file';
+import { BuilderFileService } from '../../services/builder-file.service';
+import { BuilderFile } from '../../core/model/builder-file';
 
 describe('MainPage', () => {
   let component: MainPage;

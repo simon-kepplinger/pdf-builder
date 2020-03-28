@@ -10,6 +10,7 @@ import { MainPage } from './main.page';
 import { BottomToolbarComponent } from './bottom-toolbar/bottom-toolbar.component';
 import { PdfBuilderComponent } from './pdf-builder/pdf-builder.component';
 import { InitButtonsComponent } from './init-buttons/init-buttons.component';
+import { PageHeaderComponent } from '../../shared/page-header/page-header.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { InitButtonsComponent } from './init-buttons/init-buttons.component';
     MainPage,
     BottomToolbarComponent,
     PdfBuilderComponent,
-    InitButtonsComponent
+    InitButtonsComponent,
+    PageHeaderComponent
   ],
   providers: []
 })

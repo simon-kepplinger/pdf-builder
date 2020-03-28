@@ -1,0 +1,53 @@
+$main-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+$accent-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
+$bottom-bar-height: 70px;
+
+$primary-dark: #212121;
+$primary-darkred: #180706;
+$primary: #f73646;
+$secondary: #ffe21c;
+
+$dark-grey: #414141;
+
+$header-bg: #011f30;
+$dark-text-color: #212121;
+$text-color: #2b2b2b;
+$light-text-color: #737373;
+
+$light-grey-bg: #f4f6fa;
+
+$border-color: #ebebeb;
+
+$blue: #1ca0ff;
+$darkblue: #1b5fcc;
+$highlight-blue: lighten($blue, 40%);
+
+$green: rgb(86, 171, 47);
+$light-green: rgb(168, 224, 99);
+$neon-green: rgb(73, 251, 53);
+
+$red: #f73646;
+$dark-red: #cc0018;
+$orange: #ffbd00;
+
+$featured-community-color: orangered;
+$hovered-community-color: dodgerblue;
+
+$green-gradient: linear-gradient(to right, rgb(86, 171, 47), $light-green);
+$grey-gradient: linear-gradient(to right, #c1c1c1, #cfcfcf);
+$dark-gradient: linear-gradient(to right, #404040, $primary-dark);
+$red-gradient: linear-gradient(to right, #ff0024, #b70017);
+$blue-gradient: linear-gradient(to right, #1c70ff, $blue);
+
+$slider-gradient: linear-gradient(to right, #2cb0ff, $darkblue);
+
+$easeOutQuint: cubic-bezier(0.23, 1, 0.32, 1);
+$easeOutCubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+
+$sm-width: 576px;
+$md-width: 768px;
+$lg-width: 992px;
+$xl-width: 1200px;
+$xxl-width: 1500px;

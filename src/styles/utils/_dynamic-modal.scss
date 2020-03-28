@@ -1,0 +1,59 @@
+@import 'tools';
+
+#modalOverlay {
+  @include absoluteFull();
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 900;
+}
+
+.modal-spacer {
+  @include absoluteFull();
+  @include flexCenter();
+  z-index: 1000;
+
+  .dynamic-modal {
+    position: relative;
+    color: white;
+    background-color: rgba($dark-grey, .9);
+    border-radius: 3px;
+    box-shadow: 0 0 20px 0 black inset;
+    max-width: 600px;
+
+    .content {
+      padding: 20px;
+      max-width: 75vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .close-modal {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+      z-index: 200;
+    }
+
+    .title {
+      @include fluidFontSize(20px, 26px);
+      color: white;
+      font-variant: small-caps;
+      margin: 0 0 20px;
+      text-align: center;
+    }
+
+    p {
+      @include fluidFontSize(10px, 13px);
+      margin: 0 10px 20px;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+
+    button {
+      min-width: 250px;
+    }
+  }
+}

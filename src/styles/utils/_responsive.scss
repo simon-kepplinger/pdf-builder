@@ -1,0 +1,106 @@
+@import 'tools';
+
+.show-sm-flex {
+  display: flex;
+}
+
+.show-sm {
+  display: block;
+}
+
+.hide-sm, .hide-sm-flex {
+  display: none;
+}
+
+.show-md-flex {
+  display: flex;
+}
+
+.show-md {
+  display: block;
+}
+
+.hide-md, .hide-md-flex {
+  display: none;
+}
+
+.show-lg-flex {
+  display: flex;
+}
+
+.show-lg {
+  display: block;
+}
+
+.hide-lg, .hide-lg-flex {
+  display: none;
+}
+
+.show-xl-flex {
+  display: flex;
+}
+
+.show-xl {
+  display: block;
+}
+
+.hide-xl, .hide-xl-flex {
+  display: none;
+}
+
+
+@media (max-width: $sm-width) {
+  .show-sm, .show-sm-flex {
+    display: none;
+  }
+
+  .hide-sm {
+    display: block;
+  }
+
+  .hide-sm-flex {
+    display: flex;
+  }
+}
+
+@media (max-width: $md-width) {
+  .show-md, .show-md-flex {
+    display: none;
+  }
+
+  .hide-md {
+    display: block;
+  }
+
+  .hide-md-flex {
+    display: flex;
+  }
+}
+
+@media (max-width: $lg-width) {
+  .show-lg, .show-lg-flex {
+    display: none;
+  }
+
+  .hide-lg {
+    display: block;
+  }
+
+  .hide-lg-flex {
+    display: flex;
+  }
+}
+
+@media (max-width: $xl-width) {
+  .show-xl, .show-xl-flex {
+    display: none;
+  }
+
+  .hide-xl {
+    display: block;
+  }
+
+  .hide-xl-flex {
+    display: flex;
+  }
+}

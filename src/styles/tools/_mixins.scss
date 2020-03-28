@@ -1,0 +1,161 @@
+@import 'functions';
+
+@mixin transparent-green-gradient($a: 1) {
+  background-image: linear-gradient(to right, rgb(86, 171, 47, $a), rgb(168, 224, 99, $a));
+}
+
+@mixin box-shadow($h: 0, $v: 0, $blur: 50px, $offset: 0, $color: rgba(139, 141, 144, 0.35)) {
+  -webkit-box-shadow: $h $v $blur $offset $color;
+  -moz-box-shadow: $h $v $blur $offset $color;
+  box-shadow: $h $v $blur $offset $color;
+}
+
+@mixin absoluteMiddle() {
+  position: absolute;
+  top: 50%;
+  height: 0;
+}
+
+@mixin absoluteBottom() {
+  position: absolute;
+  bottom: 0;
+  height: 0;
+}
+
+
+@mixin absoluteFull() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin absoluteCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin fixedFull() {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin fixedCenter() {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flexColumnCenter() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin skyGradientCentered() {
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(top, #FFFFFF, #E5F8FF, #FFFFFF);
+  background: -moz-linear-gradient(top, #FFFFFF, #E5F8FF, #FFFFFF);
+  background: linear-gradient(to bottom, #FFFFFF, #E5F8FF, #FFFFFF);
+}
+
+@mixin skyGradient() {
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(top, #FFFFFF, #c6f0ff);
+  background: -moz-linear-gradient(top, #FFFFFF, #c6f0ff);
+  background: linear-gradient(to bottom, #FFFFFF, #c6f0ff);
+}
+
+@mixin skyGradientFull() {
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(top, #e4fcff, #c6f0ff, #c6f0ff);
+  background: -moz-linear-gradient(top, #e4fcff, #c6f0ff, #c6f0ff);
+  background: linear-gradient(to bottom, #e4fcff, #c6f0ff, #c6f0ff);
+}
+
+@mixin greenGradient() {
+  background: $green-gradient !important;
+}
+
+@mixin redGradient() {
+  background: $red-gradient !important;
+}
+
+@mixin improvedImageRendering() {
+  -webkit-backface-visibility: hidden;
+  -ms-transform: translateZ(0); /* IE 9 */
+  -webkit-transform: translateZ(0); /* Chrome, Safari, Opera */
+  transform: translateZ(0);
+}
+
+@mixin placeholderColor($color: #000000) {
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color !important;
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color !important;
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color !important;
+  }
+}
+
+@mixin responsiveFontSize($input) {
+  @media (max-width: $xxl-width) {
+    font-size: $input * .95;
+  }
+
+  @media (max-width: $xl-width) {
+    font-size: $input * .9;
+  }
+
+  @media (max-width: $lg-width) {
+    font-size: $input * .75;
+  }
+
+  @media (max-width: $md-width) {
+    font-size: $input * .65;
+  }
+
+  @media (max-width: $sm-width) {
+    font-size: $input * .55;
+  }
+}
+
+@mixin fluidFontSize($min-font-size, $max-font-size, $min-vw: 560px, $max-vw: 900px) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}

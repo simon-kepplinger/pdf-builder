@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   entryComponents: [],
   imports: [
@@ -24,6 +24,7 @@ import { AppComponent } from './app.component';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

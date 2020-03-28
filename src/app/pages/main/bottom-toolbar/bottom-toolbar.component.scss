@@ -1,11 +1,15 @@
 ion-buttons {
-  padding: 5px;
+  padding: 7px;
 
   ion-tab-button {
     background-color: transparent;
 
+    ion-icon {
+      font-size: 20px;
+    }
+
     ion-label {
-      font-size: 1.2em;
+      margin-top: 3px;
       letter-spacing: 1px;
     }
   }

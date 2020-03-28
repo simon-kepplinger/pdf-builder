@@ -1,0 +1,62 @@
+@import 'tools';
+
+.hidden {
+  opacity: 0;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.page-loader {
+  position: relative;
+  height: 100vh;
+}
+
+.blue-bg {
+  color: white;
+  background: $blue-gradient;
+}
+
+.red-bg {
+  color: white;
+  background: $red-gradient;
+}
+
+.green-bg {
+  color: white;
+  background: $green-gradient;
+}
+
+.symbol {
+  height: 16px;
+  width: auto;
+  margin-left: 5px;
+}
+
+#toast-container {
+  top: 12%;
+
+  .toast {
+    max-width: 400px;
+    font-family: $accent-font;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+}
+
+.logo {
+  height: 200px;
+  width: auto;
+  margin-bottom: 10px;
+
+  @media (max-width: 550px) {
+    height: 120px;
+    margin-bottom: 5px;
+  }
+
+  @media (max-height: 550px) {
+    height: 80px;
+    margin-bottom: 5px;
+  }
+}

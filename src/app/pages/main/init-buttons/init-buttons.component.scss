@@ -1,0 +1,29 @@
+@import "tools";
+
+#initButtonContainer {
+  @include flexColumnCenter();
+  height: 100%;
+
+  .title {
+    font-family: Quicksand, sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .init-button {
+    @include flexColumnCenter();
+    margin: 5px 0;
+    width: 110px;
+    height: 95px;
+    font-family: Quicksand, sans-serif;
+    font-weight: 500;
+    color: $text-color;
+    //background-color: white;
+
+    ion-icon {
+      margin-bottom: 7px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import 'tools';
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $main-font;
+  color: $text-color;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.light-text {
+  font-family: $accent-font;
+}
+
+.control-label {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: .7em;
+  color: $light-text-color;
+}

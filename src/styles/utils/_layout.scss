@@ -1,0 +1,24 @@
+@import 'tools';
+
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-center-vertically {
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.box {
+  font-family: $accent-font;
+  padding: 20px;
+  border-radius: 4px;
+}

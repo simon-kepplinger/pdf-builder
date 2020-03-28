@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { BuilderFileService } from '../services/builder-file.service';
-import { BuilderFile } from '../core/model/builder-file';
-import { BaseBehaviorSubjectComponent } from '../core/base-components/base-behavoir-subject.component';
+import { BuilderFileService } from '../../services/builder-file.service';
+import { BuilderFile } from '../../core/model/builder-file';
+import { BaseBehaviorSubjectComponent } from '../../core/base-components/base-behavoir-subject.component';
 
 @Component({
   selector: 'app-main',
