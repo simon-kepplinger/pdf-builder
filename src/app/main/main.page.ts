@@ -17,12 +17,12 @@ export class MainPage extends BaseSubscriptionComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.addSub(this.builderFileService.files.subscribe(() => ))
+    // this.addSub(this.builderFileService.files.subscribe(() => ))
   }
 
   private onFileChange(files: BuilderFile[]): void {
-    if (files.length !== 0) {
+    // if (files?.length !== 0) {
 
-    }
+    // }
   }
 }
