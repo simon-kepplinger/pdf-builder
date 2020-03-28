@@ -119,6 +119,11 @@
             "karmaConfig": "karma.conf.js",
             "styles": [],
             "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/styles"
+              ]
+            },
             "assets": [
               {
                 "glob": "favicon.ico",

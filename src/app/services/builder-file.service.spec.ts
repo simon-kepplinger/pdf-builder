@@ -6,7 +6,7 @@ describe('BuilderFileService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
-    const service: BuilderFileService = TestBed.get(BuilderFileService);
+    const service: BuilderFileService = TestBed.inject(BuilderFileService);
     expect(service).toBeTruthy();
   });
 });

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FileExplorerService } from '../../../services/file-explorer.service';
 
 @Component({
   selector: 'app-init-buttons',
@@ -6,6 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./init-buttons.component.scss'],
 })
 export class InitButtonsComponent {
-  public constructor() {
+  public constructor(private fileExplorer: FileExplorerService) {
   }
 }

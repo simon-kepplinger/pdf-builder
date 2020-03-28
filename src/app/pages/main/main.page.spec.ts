@@ -7,6 +7,8 @@ import { PdfBuilderComponent } from './pdf-builder/pdf-builder.component';
 import { InitButtonsComponent } from './init-buttons/init-buttons.component';
 import { BuilderFileService } from '../../services/builder-file.service';
 import { BuilderFile } from '../../core/model/builder-file';
+import { FileOpener } from '@ionic-native/file-opener/ngx';
+import { PageHeaderComponent } from '../../shared/page-header/page-header.component';
 
 describe('MainPage', () => {
   let component: MainPage;
@@ -14,8 +16,8 @@ describe('MainPage', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [MainPage, BottomToolbarComponent, PdfBuilderComponent, InitButtonsComponent],
-      providers: [BuilderFileService],
+      declarations: [MainPage, BottomToolbarComponent, PdfBuilderComponent, InitButtonsComponent, PageHeaderComponent],
+      providers: [BuilderFileService, FileOpener],
       imports: [IonicModule]
     }).compileComponents();
 

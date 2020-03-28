@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
 import { InitButtonsComponent } from './init-buttons.component';
+import { FileOpener } from '@ionic-native/file-opener/ngx';
 
 describe('InitButtonsComponent', () => {
   let component: InitButtonsComponent;
@@ -10,7 +11,8 @@ describe('InitButtonsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [InitButtonsComponent],
-      imports: [IonicModule]
+      imports: [IonicModule],
+      providers: [FileOpener]
     }).compileComponents();
 
     fixture = TestBed.createComponent(InitButtonsComponent);
