@@ -8,15 +8,23 @@ import { MainPageRoutingModule } from './main-routing.module';
 
 import { MainPage } from './main.page';
 import { BottomToolbarComponent } from './bottom-toolbar/bottom-toolbar.component';
+import { PdfBuilderComponent } from './pdf-builder/pdf-builder.component';
+import { InitButtonsComponent } from './init-buttons/init-buttons.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MainPageRoutingModule
+    MainPageRoutingModule,
   ],
-  declarations: [MainPage, BottomToolbarComponent]
+  declarations: [
+    MainPage,
+    BottomToolbarComponent,
+    PdfBuilderComponent,
+    InitButtonsComponent
+  ],
+  providers: []
 })
 export class MainPageModule {
 }

@@ -41,6 +41,7 @@
       "trace"
     ],
     "no-empty": false,
+    "prefer-const": false,
     "no-inferrable-types": [
       false,
       "ignore-params"
