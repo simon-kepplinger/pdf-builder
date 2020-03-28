@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { MainPageRoutingModule } from './main-routing.module';
 
 import { MainPage } from './main.page';
+import { BottomToolbarComponent } from './bottom-toolbar/bottom-toolbar.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { MainPage } from './main.page';
     IonicModule,
     MainPageRoutingModule
   ],
-  declarations: [MainPage]
+  declarations: [MainPage, BottomToolbarComponent]
 })
-export class MainPageModule {}
+export class MainPageModule {
+}
