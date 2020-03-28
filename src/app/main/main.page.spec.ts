@@ -29,7 +29,7 @@ describe('MainPage', () => {
   });
 
   it('should setBuilderOpened according to builder files length', () => {
-    const builderFileService: BuilderFileService = TestBed.get(BuilderFileService);
+    const builderFileService: BuilderFileService = TestBed.inject(BuilderFileService);
 
     expect(builderFileService.files.getValue().length).toBe(0);
     expect(component.isBuilderOpened).toBeFalsy();
