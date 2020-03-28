@@ -9,4 +9,8 @@ import { FileExplorerService } from '../../../services/file-explorer.service';
 export class InitButtonsComponent {
   public constructor(private fileExplorer: FileExplorerService) {
   }
+
+  public openFiles(): void {
+    this.fileExplorer.openFiles();
+  }
 }
